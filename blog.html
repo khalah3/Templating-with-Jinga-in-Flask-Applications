@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Blogs</title>
+</head>
+<body>
+     <h1>Blog posts</h1>
+     <ul>
+         {% for post in blog_posts %}
+             <li>
+                 <h2>{{post['title']}}</h2>
+                 <p>{{post['subtitle']}}</p>
+                 <p>{{post['body']}}</p>
+
+             </li>
+         {% endfor %}
+
+     </ul>
+
+</body>
+</html>
